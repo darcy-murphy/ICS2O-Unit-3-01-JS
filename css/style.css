@@ -1,0 +1,26 @@
+.mdl-layout__header-row {
+  align-items: center;
+  justify-content: center;
+}
+
+.mdl-layout__content {
+  padding-left: 15pt;
+  padding-right: 15pt;
+  padding-top: 15pt;
+}
+
+.mdl-ripple {
+  background: #007;
+  opacity: 0.1;
+}
+
+body {
+  background-color: yellowgreen;
+}
+
+p {
+  color: blue;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  padding-top: 5pt;
+}
