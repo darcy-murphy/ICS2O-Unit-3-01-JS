@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="description" content="My first webpage, with JavaScript" />
     <meta name="keywords" content="mths, ics2o" />
-    <meta name="author" content="Mr. Coxall" />
+    <meta name="author" content="Darcy Murphy" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
@@ -28,7 +28,7 @@
       href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>My first webpage, with a JS file</title>
+    <title>Area of a Trapezoid</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -40,14 +40,76 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <button
+        <br />
+        <h1>Fourmula</h1>
+        <img 
+        src="./images/trapezoid.svg"
+        alt="Trapezoid Fourmula"
+        width="250"
+        height="250"
+        />
+        <br />
+        <p>A= [ ( a+b ) / 2 ] h</p>
+        <br />
+        <p>Please enter intergers for dimesions</p>
+        <p>a base:</p>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+            class="mdl-textfield_input"
+            type="text"
+            pattern="-?[0-9]*(\.[0-9]+)?"
+            id="sample1"
+            />
+            <label class="mdl-textfield_label" for="smaple2">A base ...</label>
+            <span class="mdl-textfield_error">Input is not a number!</span>
+          </div>
+        </form>
+        <p>b base:</p>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+            class="mdl-textfield_input"
+            type="text"
+            pattern="-?[0-9]*(\.[0-9]+)?"
+            id="sample2"
+            />
+            <label class="mdl-textfield_label" for="smaple2">B base ...</label>
+            <span class="mdl-textfield_error">Input is not a number!</span>
+            </div>
+            </form>
+            <p>height</p>
+             <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+            class="mdl-textfield_input"
+            type="text"
+            pattern="-?[0-9]*(\.[0-9]+)?"
+            id="sample3"
+            />
+            <label class="mdl-textfield_label" for="smaple2">Height ...</label>
+            <span class="mdl-textfield_error">Input is not a number!</span>
+          </div>
+          </form>
+          <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
-        >
-          Say "Hello, World!"
-        </button>
-        <div id="hello-world"></div>
-      </main>
-    </div>
-  </body>
-</html>
+          onclick="calculate()"
+          >
+             Calculate
+            </button>
+            <br />
+            <div id="answers">
+              <div id="area"></div>
+              <div id=""></div>
+            </div>
+            </main>
+            </div>
+            </body>
+            </html>
+
+
+
+
